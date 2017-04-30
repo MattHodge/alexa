@@ -1,0 +1,35 @@
+{
+  "intents": [
+    {
+      "name": "AMAZON.CancelIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.HelpIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StopIntent",
+      "samples": []
+    },
+    {
+      "name": "GetWeerIntent",
+      "samples": [
+        "current weather",
+        "current temperature",
+        "what's it like outside"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetWeerRainIntent",
+      "samples": [
+        "when will it rain next",
+        "when will it rain",
+        "when is it going to rain",
+        "how soon until it rains"
+      ],
+      "slots": []
+    }
+  ]
+}

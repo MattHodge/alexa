@@ -1,0 +1,27 @@
+{
+  "name": "darksky-weather",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "aws-lambda-local": "^1.0.15"
+  },
+  "scripts": {
+    "invoke": "lambda-local -f index.js -e tests/request.json",
+    "invoke-rain": "lambda-local -f index.js -e tests/request-rain.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "==6.10"
+  },
+  "dependencies": {
+    "alexa-sdk": "^1.0.9",
+    "beaufort-scale": "^1.0.3",
+    "node-red-contrib-buienradar": "^0.2.0",
+    "request": "^2.81.0",
+    "request-promise-native": "^1.0.3",
+    "string-format": "^0.5.0",
+    "weather-js": "^2.0.0"
+  }
+}

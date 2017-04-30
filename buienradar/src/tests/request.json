@@ -1,0 +1,24 @@
+{
+  "session": {
+    "sessionId": "SessionId.2a2e6cf9-0c89-4c81-8981-XXXXXXXXXXXXX",
+    "application": {
+      "applicationId": "amzn1.ask.skill.133b870b-b384-464e-a641-XXXXXXXXXXX"
+    },
+    "attributes": {},
+    "user": {
+      "userId": "amzn1.ask.account.XXxXXXXXXX3125426t35262345626724624645363245635635763573573575373573575373563264363467346735673675"
+    },
+    "new": true
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.9a16c4e3-7baa-44dc-9b76-XXXXXXXXXXXXXX",
+    "locale": "en-US",
+    "timestamp": "2017-04-29T19:51:30Z",
+    "intent": {
+      "name": "GetWeerIntent",
+      "slots": {}
+    }
+  },
+  "version": "1.0"
+}
