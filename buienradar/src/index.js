@@ -88,9 +88,9 @@ const buienRaderForecast = function(
       hoursToCheck = hours_ahead_to_check_rain;
     }
 
-    // loop through each of the hours in the day, and find the hour when there is a chance of rain
-    for (let i = 0, len = hoursToCheck; i < len; i++) {
-      let chanceOfRain = forecast["days"][0]["hours"][i]["precipation"];
+    // find the hour when there is a chance of rain
+    forecast["days"][0]["hours"].map((hour, rain_percent_threshold) => {
+      let chanceOfRain = hour.precipation;
 
       if (chanceOfRain > rain_percent_threshold) {
         return {
@@ -98,7 +98,7 @@ const buienRaderForecast = function(
           hoursUntilRain: i
         };
       }
-    }
+    });
 
     return null; // there is no rain up coming
   };
